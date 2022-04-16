@@ -7,7 +7,7 @@
 /*Mochilas*/
 body {
     background-image: url('../assets/img/fondo1.png');
-    background-size: 100vw;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -131,19 +131,22 @@ p {
 }
 
 /*Padre contenedora seccion Mochilas*/
-.contenedormochi {
-    padding: 50px;
-    gap: 50px;
+.row    {
+    padding: 5vw;
+    gap: 5vw;
     flex-wrap: wrap;
-    display: flex
+    display: flex;
 }
-
-/*hijos de mochila*/
-.mochi {
-    width: 320px;
+.col    {
+    width: 25vw;
     margin: auto;
     font-size: 1rem;
     text-align: justify;
+}
+
+.card-text  {
+    height: 20vh;
+    overflow-y: scroll;
 }
 
 /*Seccion: Accesorios*/
@@ -231,7 +234,12 @@ footer {
 
 @media (max-width:320px) and (max-width:600px) {
 
-    .mochi,
+    .col    {
+        width: 80vw; 
+    }
+}
+
+@media (max-width:320px) and (max-width:600px) {
     .acce,
     .multi2 {
         font-size: 1rem;
@@ -241,7 +249,6 @@ footer {
 
 @media (max-width:320px) and (max-width:600px) {
 
-    .contenedormochi,
     .contenedoracc,
     .multi1 {
         flex-direction: column;
