@@ -132,16 +132,14 @@ p {
 
 /*Padre contenedora seccion Mochilas*/
 .row    {
-    padding: 5vw;
-    gap: 5vw;
-    flex-wrap: wrap;
-    display: flex;
+    gap: 10vw;
+    width: 100vw;
+    justify-content: space-around;
+    
 }
 .col    {
-    width: 25vw;
-    margin: auto;
-    font-size: 1rem;
     text-align: justify;
+    max-width: 80vw;
 }
 
 .card-text  {
@@ -229,13 +227,6 @@ footer {
 @media (max-width:320px) and (max-width:600px) {
     p {
         font-size: 0.7rem;
-    }
-}
-
-@media (max-width:320px) and (max-width:600px) {
-
-    .col    {
-        width: 80vw; 
     }
 }
 
