@@ -51,7 +51,7 @@ header .overlay {
     background-color: black;
     opacity: 0.3;
     z-index: 1;
-}
+    }
 
 img {
     width: 100%;
@@ -124,24 +124,23 @@ p {
 /*ajustando parrafos*/
 #video1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     flex-wrap: wrap;
-    gap: 80px
 }
 
 /*Padre contenedora seccion Mochilas*/
 .row    {
-    padding: 5vw;
-    gap: 5vw;
-    flex-wrap: wrap;
-    display: flex;
+    gap: 10vw;
+    width: 90vw;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+    
 }
 .col    {
-    width: 25vw;
-    margin: auto;
-    font-size: 1rem;
-    text-align: justify;
+    text-align: center;
+    max-width: 80vw;
+
 }
 
 .card-text  {
@@ -187,6 +186,7 @@ p {
 /* aca empieza el estilo de contactos*/
 .contactocont {
     flex-direction: column;
+    text-align: center;
     display: inline;
 }
 
@@ -209,9 +209,8 @@ footer {
 
 .contenedor-form {
     background-color: gray;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 @media (max-width:320px) and (max-width:600px) {
@@ -229,13 +228,6 @@ footer {
 @media (max-width:320px) and (max-width:600px) {
     p {
         font-size: 0.7rem;
-    }
-}
-
-@media (max-width:320px) and (max-width:600px) {
-
-    .col    {
-        width: 80vw; 
     }
 }
 
