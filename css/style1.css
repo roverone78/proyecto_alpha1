@@ -4,16 +4,6 @@
   padding: 0;
 }
 
-/*el resto de las secciones va aca*/
-/*Mochilas*/
-body {
-  background-image: url("../assets/img/fondo1.png");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-}
-
 /*ajustes de valores de tamaño al header*/
 header {
   position: relative;
@@ -52,13 +42,19 @@ header .overlay {
   z-index: 1;
 }
 
+body {
+  background-image: url("../assets/img/fondo1.png");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
 img {
   width: 100%;
 }
 
-a:link,
-a:visited,
-a:active {
+a:link, a:visited, a:active {
   text-decoration: none;
   color: whitesmoke;
   font-size: medium;
@@ -80,6 +76,7 @@ h2 {
 
 p {
   font-size: 1rem;
+  text-align: center;
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
@@ -116,8 +113,6 @@ p {
   grid-row: 1/3;
 }
 
-/*fin de grid*/
-/*colocando los ajustes en las imagenes mediante clases*/
 .imagenescont {
   padding: 30px;
   gap: 30px;
@@ -135,7 +130,6 @@ p {
   font-size: 0.5rem;
 }
 
-/*ajustando parrafos*/
 #video1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +142,6 @@ p {
       flex-wrap: wrap;
 }
 
-/*Padre contenedora seccion Mochilas*/
 .row {
   gap: 10vw;
   width: 90vw;
@@ -168,8 +161,6 @@ p {
   overflow-y: scroll;
 }
 
-/*Seccion: Accesorios*/
-/*contenedor Accesorios*/
 .contenedoracc {
   padding: 50px;
   gap: 50px;
@@ -180,7 +171,6 @@ p {
   display: flex;
 }
 
-/*items del contenedor Accesorios*/
 .acce {
   width: 320px;
   text-align: justify;
@@ -189,26 +179,23 @@ p {
   list-style-position: inside;
 }
 
-/*fin de la seccion Accesorios*/
-/*en esta seccion se crea los estilos para el contenedor de la seccion multimedia*/
 .multi1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 100px;
+  gap: 90px;
 }
 
-/*aca se aplica estilos a los items de multimedia*/
 .multi2 {
   width: 320px;
   margin: auto;
-  font-size: 1rem;
 }
 
-/*aca por fin termine esta seccion que me dio dolor de cabeza :p*/
-/* aca empieza el estilo de contactos*/
 .contactocont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +208,12 @@ p {
   display: inline;
 }
 
-/*esta secciones el pie de pagina*/
+.contenedor-form {
+  background-color: gray;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
 footer {
   background-image: url("../assets/img/montaña-footer.png");
   background-repeat: no-repeat;
@@ -244,40 +236,39 @@ footer {
   color: black;
 }
 
-.contenedor-form {
-  background-color: gray;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-@media (max-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 601px) {
   h1 {
     font-size: 1.5rem;
   }
-}
-
-@media (max-width: 320px) and (max-width: 600px) {
   h2 {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 320px) and (max-width: 600px) {
   p {
     font-size: 0.7rem;
   }
-}
-
-@media (max-width: 320px) and (max-width: 600px) {
-  .acce,
-  .multi2 {
+  #video1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenedoracc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .acce {
     font-size: 1rem;
     width: 100%;
   }
-}
-
-@media (max-width: 320px) and (max-width: 600px) {
-  .contenedoracc,
   .multi1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -286,16 +277,20 @@ footer {
     text-align: center;
     margin: auto;
   }
-}
-
-@media (min-width: 320px) and (max-width: 600px) {
+  .multi2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1rem;
+    width: 70vw;
+  }
   footer {
     background-color: #1a4d6a;
     background-image: none;
   }
-}
-
-@media (min-width: 320px) and (max-width: 600px) {
   .foot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -311,6 +306,4 @@ footer {
     color: white;
   }
 }
-
-/*aca termina en queries de movil*/
 /*# sourceMappingURL=style1.css.map */
