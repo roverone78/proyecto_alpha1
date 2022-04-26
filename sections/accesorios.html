@@ -24,29 +24,30 @@
             <div class="d-flex h-10  text-center align-items-center">
                 <div class="w-100 text-white">
                     <h1 class="animate__animated animate__zoomInUp"><a class="navbar-brand"
-                            href="../index.html"><strong>Alphastore</a></h1>
+                            href="../index.html"><strong>ALPHASTORE</a></h1>
                 </div>
                 <!-- Inicio de menu de navegación -->
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
-                                    href="../index.html">Inicio</a>
-                                <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
-                                    href="../sections/mochilas.html">Mochilas</a>
-                                <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
-                                    href="../sections/accesorios.html">Accesorios</a>
-                                <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
-                                    href="../sections/multimedia.html">Multimedia</a>
-                                <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
-                                    href="../sections/contacto.html">Contacto</a>
-                            </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
+                                        href="../index.html">Inicio</a></li>
+                                <li><a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
+                                        href="../sections/mochilas.html">Mochilas</a></li>
+                                <li><a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
+                                        href="../sections/accesorios.html">Accesorios</a></li>
+                                <li><a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
+                                        href="../sections/multimedia.html">Multimedia</a></li>
+                                <li><a class="nav-link active animate__animated animate__zoomIn" aria-current="page"
+                                        href="../sections/contacto.html">Contacto</a></li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -57,69 +58,129 @@
     <!--Fin de aplicacion de boostrap y animacion en el menu-->
 
     <h1 class="animate__animated animate__zoomInUp">Accesorios</h1>
-    <section class="contenedoracc">
-        <!--se genera contenedor de la seccion Accesorios-->
-        <div class="acce">
-            <!--Aca estan los items del contenedor-->
-            <img src="../assets/img/cartera-1.png" alt="Cartera-1" width="300" height="400">
-            <h2>Cartera Timberlad</h2><br>
-            <p>Cierre de TrifoldCartera de piel 100 % auténtica: esta cartera para hombre está hecha
-                de piel italiana auténtica, con una textura suave que es muy suave al tacto y se verá
-                excelente incluso a medida que envejece con el uso diario Diseño compacto: mide 4.25
-                pulgadas de alto por 3.5 pulgadas de ancho, esta cartera de cuero para hombre pegable.</p><br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/cartera-1.png" class="card-img-top" alt="cartera-1">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Billetera Trayvax 1.0</h2><br>
+                    <p class="card-text">Trayvax ofrece una versión robusta de una billetera de cuero clásica.
+                        Comenzamos con una resistente placa de acero inoxidable envuelta en cuero curtido al
+                        aceite de primera calidad y asegurada con paracord MIL-SPEC. Esta billetera delgada está
+                        repleta de características que incluyen un abrebotellas incorporado, un clip para billetes
+                        integrado, un punto de fijación y protección RFID.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="acce">
-            <img src="../assets/img/cartera-2.png" alt="Cartera 2" width="300" height="400">
-            <h2>Cartera Runbox</h2><br>
-            <p>Cartera Runbox delgada de gran capacidad donde puedes guardar hasta más de
-                12 tarjetas y el compartimiento para dinero puede guardar un montón de billetes.
-                La cartera delgada es ideal para llevar tarjetas de presentación, tarjetas de
-                crédito y débito, billetes, dinero en efectivo, etc.</p>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/cartera-2.png" class="card-img-top" alt="cartera-2">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Cartera Runbox</h2><br>
+                    <p class="card-text">Cartera Runbox delgada de gran capacidad donde puedes guardar hasta más de
+                        12 tarjetas y el compartimiento para dinero puede guardar un montón de billetes.
+                        La cartera delgada es ideal para llevar tarjetas de presentación, tarjetas de
+                        crédito y débito, billetes, dinero en efectivo, etc.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="acce">
-            <img src="../assets/img/trayvax.png" alt="cartera3" width="300" height="400">
-            <h2> Cartera trayvax 2.0</h2><br>
-            <p>Tu nuevo compañero de por vida. La billetera Original 2.0 está diseñada para ser más duradera que su
-                dueño, creada para soportar las condiciones más duras. Fabricado en los EE. UU. con aluminio de calidad
-                aeronáutica, cuerda de paracaídas MIL-SPEC y acero inoxidable, el Original 2.0 cuenta con una barra de
-                palanca
-                duradera,protección RFID, clip de bolsillo/dinero utilitario y un abrebotellas/clip de dinero integrado.
-            </p>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/trayvax.png" class="card-img-top" alt="cartera-3">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Cartera trayvax 2.0</h2> <br>
+                    <p class="card-text">Tu nuevo compañero de por vida. La billetera Original 2.0 está diseñada para
+                        ser más duradera que su dueño, creada para soportar las condiciones más duras. Fabricado en los EE. UU. con aluminio de
+                        calidad aeronáutica, cuerda de paracaídas MIL-SPEC y acero inoxidable, el Original 2.0 cuenta con una
+                        barra de palanca duradera,protección RFID, clip de bolsillo/dinero utilitario y un abrebotellas/clip de
+                        dinero integrado.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="acce">
-            <img src="../assets/img/multiherramienta.png" alt="multiherramienta" width="300" height="400">
-            <h2>Multiherramienta Leatherman Signal</h2><br>
-            <p>Vivimos tan acomodados a los placeres del mundo moderno que cualquier pequeño imprevisto nos puede
-                hacer parar en seco y perder nuestro preciado tiempo. Evidentemente, cada situación requiere una forma
-                de afrontarla, y no podemos ir cargados de herramientas y utensilios dedicados a cualquier reparación
-                que vayamos a necesitar realizar.</p>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/multiherramienta.png" class="card-img-top" alt="multi-1">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Multiherramienta Leatherman Signal</h2><br>
+                    <p class="card-text">Vivimos tan acomodados a los placeres del mundo moderno que cualquier pequeño
+                        imprevisto nos puede hacer parar en seco y perder nuestro preciado tiempo. Evidentemente, cada situación requiere una
+                        forma de afrontarla, y no podemos ir cargados de herramientas y utensilios dedicados a cualquier
+                        reparación
+                        que vayamos a necesitar realizar.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="acce">
-            <img src="../assets/img/navaja-1.png" alt="navaja-1" width="300" height="400">
-            <h2>Cortapluma Victorinox Cybertool 23150</h2><br>
-            <p>Un corte por encima del resto: compacto, ágil y listo para enfrentarse a cualquier aventura.
-                Nuestra gama de cuchillos Swiss Army se ha establecido desde 1897 y sigue siendo un icono de
-                utilidad y diseño inteligente.Brocas Pozidrive #0 y # 1; bolígrafo; y mas
-                duradera: construcción de acero inoxidable suizo.</p>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/navaja-1.png" class="card-img-top" alt="navaja-1">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Victorinox Cybertool 23150</h2><br>
+                    <p class="card-text">Un corte por encima del resto: compacto, ágil y listo para enfrentarse a
+                        cualquier aventura.Nuestra gama de cuchillos Swiss Army se ha establecido desde 1897 y sigue siendo un icono de
+                        utilidad y diseño inteligente.Brocas Pozidrive #0 y # 1; bolígrafo; y mas
+                        duradera: construcción de acero inoxidable suizo.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="acce">
-            <img src="../assets/img/navaja-2.png" alt="navaja-2" width="300" heigth="400"><br>
-            <h2>Swiss Army 7 Alox</h2><br>
-            <p>Navaja de bolsillo mediana con cachas acanaladas
-                Mantente listo para explorar nuevos senderos o conquistar nuevos mercados con esta navaja
-                de bolsillo fuerte y con estilo. Combinando siete funciones esenciales con un aspecto audaz,
-                la Swiss Army 7 se inspira en el espíritu aventurero de los grandes viajeros.</p>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../assets/img/navaja-2.png" class="card-img-top" alt="navaja-2">
+                <div class="card-body text-dark">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn-warning me-md-4" type="button">COMPRAR</button>
+                    </div>
+                    <h2 class="card-title">Swiss Army 7 Alox</h2><br>
+                    <p class="card-text">Navaja de bolsillo mediana con cachas acanaladas
+                        Mantente listo para explorar nuevos senderos o conquistar nuevos mercados con esta navaja
+                        de bolsillo fuerte y con estilo. Combinando siete funciones esenciales con un aspecto audaz,
+                        la Swiss Army 7 se inspira en el espíritu aventurero de los grandes viajeros.
+                    </p>
+                </div>
+                <div class="">
+                    <!--se deja esta linea para un posible incusion de un boton-->
+                </div>
+            </div>
         </div>
-        <br>
+    </div>
     </section>
     <!--inicio de footer-->
-    <a href="#pie-pagina"></a>
-    <footer id="pie-pagina" style="margin-top: 70px;">
+    <a href="#piePagina"></a>
+    <footer id="piePagina" style="margin-top: 70px;">
         <section class="foot">
             <div>
                 <li><i class="bi bi-whatsapp" style="font-size: 2rem; color: black;"></i></li>
