@@ -70,11 +70,13 @@ h2 {
   text-align: center;
   margin-top: 30px;
   font-size: 2rem;
+  color: black;
 }
 
 p {
   font-size: 1rem;
   text-align: center;
+  color: black;
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
@@ -188,7 +190,7 @@ ol {
       -ms-flex-direction: column;
           flex-direction: column;
   display: inline;
-  color: white;
+  color: black;
 }
 
 .contenedorForm {
