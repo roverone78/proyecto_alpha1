@@ -100,9 +100,8 @@ $colores:
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 85px;
+    gap: 90px;
     margin-top: 10vh;
-    box-shadow: #1a4d6a;
     transition: .2s;
     :hover {
         transform: scale(1.05);
@@ -151,6 +150,10 @@ $colores:
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10vh;
+    transition: .2s;
+    :hover {
+        transform: scale(1.03);
+    }
 }
 
 .contactoCont {
@@ -184,6 +187,59 @@ footer {
 }
 
 //se aplico @import a las medias queries
+//media queries tablet
+@media (min-width: $tablet) and (max-width: $desktop)   {
+
+    img {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .imagenesCont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagenPortal1 {
+        width: 70vw;
+    }
+
+    #video1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .multi1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorForm {
+        background-color: #1a4d6a;
+        margin-left: 5vw;
+        margin-right: 6vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+
+//media queries mobile
 @media (min-width: $mobile) and (max-width: $tablet) {
 
     img {
@@ -204,19 +260,23 @@ footer {
     }
 
     .imagenesCont {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .imagenPortal1 {
         width: 70vw;
-        text-align: justify;
+        text-align: center;
+
     }
 
     #video1 {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-content: center;
+        gap: 25px;
     }
 
     .multi1 {

@@ -130,10 +130,8 @@ a:link, a:visited, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 85px;
+  gap: 90px;
   margin-top: 10vh;
-  -webkit-box-shadow: #1a4d6a;
-          box-shadow: #1a4d6a;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -199,6 +197,13 @@ a:link, a:visited, a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10vh;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.multi1 :hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .contactoCont {
@@ -243,7 +248,62 @@ footer {
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 577px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  img {
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .imagenesCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imagenPortal1 {
+    width: 70vw;
+  }
+  #video1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .multi1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedorForm {
+    background-color: #1a4d6a;
+    margin-left: 5vw;
+    margin-right: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   img {
     width: 100%;
   }
@@ -258,6 +318,9 @@ footer {
     text-align: center;
   }
   .imagenesCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -265,10 +328,11 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 15px;
   }
   .imagenPortal1 {
     width: 70vw;
-    text-align: justify;
+    text-align: center;
   }
   #video1 {
     display: -webkit-box;
@@ -278,7 +342,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 25px;
   }
   .multi1 {
     -webkit-box-orient: vertical;
