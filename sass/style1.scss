@@ -16,6 +16,7 @@ body {
 
 //toodo el header esta en @import
 //aplicando ampersand
+
 a {
     &:link,
     &:visited,
@@ -25,6 +26,10 @@ a {
         font-size: medium;
         text-align: center;
     }
+    &:hover {
+        color: orangered;
+    }
+    
 }
 
 //maps
@@ -43,7 +48,7 @@ $valor in $font1 {
 }
 
 $colores: 
-    (main: lightgrey,
+    (main: white,
     base: lightyellow,
     fondo: rgb(250, 242, 242));
 
@@ -190,8 +195,14 @@ footer {
 //media queries tablet
 @media (min-width: $tablet) and (max-width: $desktop)   {
 
+    .logo   {
+        width: 15vw;
+        border-radius: 50%;
+        margin-left: -50vw;
+    }
+
     img {
-        width: 70%;
+        width: 75%;
     }
 
     h1 {
@@ -237,10 +248,31 @@ footer {
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
+
+    footer {
+        background-color: #1a4d6a;
+        background-size: auto;
+        background-image: none;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
 }
 
 //media queries mobile
 @media (min-width: $mobile) and (max-width: $tablet) {
+
+
+    .logo   {
+        border-radius: 50%;
+        margin-left: 20vw;
+        width: 20vw;
+    }
 
     img {
         width: 100%;

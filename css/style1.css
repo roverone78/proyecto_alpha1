@@ -42,6 +42,22 @@ header .overlay {
   z-index: 1;
 }
 
+header .logo {
+  border-radius: 50%;
+  margin-top: 7vh;
+  margin-left: -25vw;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    position: relative;
+    z-index: 2;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
 body {
   background-color: ghostwhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,6 +69,10 @@ a:link, a:visited, a:active {
   color: black;
   font-size: medium;
   text-align: center;
+}
+
+a:hover {
+  color: orangered;
 }
 
 .fonts-h1 {
@@ -68,7 +88,7 @@ a:link, a:visited, a:active {
 }
 
 .card-text {
-  background: lightgrey;
+  background: white;
 }
 
 .fonts {
@@ -249,8 +269,13 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .logo {
+    width: 15vw;
+    border-radius: 50%;
+    margin-left: -50vw;
+  }
   img {
-    width: 70%;
+    width: 75%;
   }
   h1 {
     font-size: 1.7rem;
@@ -301,9 +326,33 @@ footer {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
+  footer {
+    background-color: #1a4d6a;
+    background-size: auto;
+    background-image: none;
+  }
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .logo {
+    border-radius: 50%;
+    margin-left: 20vw;
+    width: 20vw;
+  }
   img {
     width: 100%;
   }

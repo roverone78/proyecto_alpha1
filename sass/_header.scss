@@ -36,4 +36,19 @@ header {
         opacity: 0.3;
         z-index: 1;
     }
+    .logo   {
+        border-radius: 50%;
+        margin-top: 7vh;
+        margin-left: -25vw;
+    }
+    
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+
+    .container {
+        position: relative;
+        z-index: 2;
+        align-items: stretch;
+    }
 }
