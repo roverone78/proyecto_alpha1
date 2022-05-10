@@ -109,9 +109,9 @@ a:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr 3fr;
       grid-template-columns: 1fr 1fr 3fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
-  gap: 5px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1px;
 }
 
 #galeriaHome img {
