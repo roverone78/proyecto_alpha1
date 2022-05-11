@@ -64,7 +64,7 @@ body {
   color: black;
 }
 
-:link, :visited, :active {
+a:link, a:visited, a:active {
   text-decoration: none;
   color: black;
   font-size: medium;
