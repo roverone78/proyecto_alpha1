@@ -64,7 +64,7 @@ body {
   color: black;
 }
 
-a:link, a:visited, a:active {
+:link, :visited, :active {
   text-decoration: none;
   color: black;
   font-size: medium;
@@ -104,18 +104,18 @@ a:hover {
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
+#galeriaHome img {
+  width: 100%;
+}
+
 #galeriaHome {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 3fr;
       grid-template-columns: 1fr 1fr 3fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 1px;
-}
-
-#galeriaHome img {
-  width: 100%;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  gap: 5px;
 }
 
 #galeriaHome :hover {
