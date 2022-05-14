@@ -107,8 +107,15 @@ a:hover {
 #galeria-home {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "rino tray guia guia" "rino tray guia guia" "mochi mochi guia guia" "mochi mochi guia guia";
-  gap: 3px;
+  gap: 5px;
+  grid-template-areas: "rino tray guia guia"
+ "rino tray guia guia"
+ "mochi mochi guia guia"
+ "mochi mochi guia guia";
+}
+
+#galeria-home img {
+  width: 100%;
 }
 
 #galeria-home :hover {
@@ -121,6 +128,17 @@ a:hover {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: rino;
+  grid-row: auto;
+  grid-column: auto;
+}
+
+#galeria-home .tray {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: tray;
+  grid-row: auto;
+  grid-column: auto;
 }
 
 #galeria-home .guia {
@@ -129,13 +147,10 @@ a:hover {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: guia;
-}
-
-#galeria-home .tray {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: tray;
+  -ms-grid-row: 50;
+  grid-row: 50px;
+  -ms-grid-column: 50;
+  grid-column: 50px;
 }
 
 #galeria-home .mochi {
@@ -144,6 +159,10 @@ a:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: mochi;
+  -ms-grid-row: 25;
+  grid-row: 25px;
+  -ms-grid-column: 50;
+  grid-column: 50px;
 }
 
 .imagenesCont {
@@ -301,6 +320,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 50px;
   }
   .imagenPortal1 {
     width: 70vw;
@@ -313,7 +333,18 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 20px;
+    gap: 25px;
+  }
+  .row {
+    gap: 12vw;
+    width: 150vw;
+    margin-left: 10vw;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .row :hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   .multi1 {
     -webkit-box-orient: vertical;
@@ -370,6 +401,50 @@ footer {
   p {
     font-size: 1rem;
     text-align: center;
+  }
+  #galeria-home {
+    display: -ms-grid;
+    display: grid;
+    gap: 3px;
+        grid-template-areas: "rino"
+ "tray"
+ "guia"
+ "mochi";
+  }
+  #galeria-home img {
+    width: 100%;
+  }
+  #galeria-home :hover {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+  #galeria-home .rino {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: rino;
+    grid-row: auto;
+    grid-column: auto;
+  }
+  #galeria-home .guia {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: guia;
+    grid-row: auto;
+    grid-column: auto;
+  }
+  #galeria-home .tray {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tray;
+    grid-row: auto;
+    grid-column: auto;
+  }
+  #galeria-home .mochi {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: mochi;
+    grid-row: auto;
+    grid-column: auto;
   }
   .imagenesCont {
     display: -webkit-box;

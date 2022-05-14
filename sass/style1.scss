@@ -3,12 +3,11 @@
     padding: 0;
 }
 
-//anidando para dar una sintaxis correcta al archivo de sass
 //partials
 @import 'vars';
 @import 'header';
 
-body {
+body    {
     background-color: ghostwhite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
@@ -17,10 +16,10 @@ body {
 //toodo el header esta en @import
 //aplicando ampersand
 
-a {
+a   {
     &:link,
     &:visited,
-    &:active {
+    &:active    {
         text-decoration: none;
         color: black;
         font-size: medium;
@@ -29,7 +28,6 @@ a {
     &:hover {
         color: orangered;
     }
-    
 }
 
 //maps
@@ -42,87 +40,94 @@ $font1: (
 //map-get 
 @each $nombre,
 $valor in $font1 {
-    .fonts-#{$nombre} {
-        size: $valor;
+.fonts-#{$nombre}   {
+    size: $valor;
     }
 }
 
-$colores: 
-    (main: white,
+$colores: (main: white,
     base: lightyellow,
     fondo: rgb(250, 242, 242));
 
 //tarjetas bootstrap
-.card-text {
-    background: map-get($map:$colores, $key:main);
+.card-text  {
+    background: map-get($map:$colores, $key:main)
 }
 
 //extend
-.fonts {
+.fonts  {
     text-align: center;
     color: black;
 }
 
-.fonts {
-    @extend .fonts;
+.fonts  {
+    @extend .fonts
 }
 
 //mixins
-@mixin btn {
+@mixin btn  {
     display: inline-block;
     border-radius: 15px;
-    padding: 10px
+    padding: 10px;
 }
 
-.btn-warning {
+.btn-warning    {
     @include btn;
     background-color: yellow;
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
-#galeria-home {
-    &   { 
-    display: grid;
-    grid-template-areas: 
-    "rino tray guia guia"
-    "rino tray guia guia"
-    "mochi mochi guia guia"
-    "mochi mochi guia guia";
-    gap: 3px;
+#galeria-home   {
+    img {
+        width: 100%;
+        display: grid;
+        gap: 5px;
+        grid-template-areas:
+        "rino tray guia guia"
+        "rino tray guia guia"
+        "mochi mochi guia guia"
+        "mochi mochi guia guia";
     }
-    & :hover {
-        filter: grayscale(1);
+    & :hover    {
+        filter: grayscale(1)
     }
-    & .rino   {
+    .rino   {
         grid-area: rino;
+        grid-row: auto;
+        grid-column: auto;
     }
-    & .guia   {
-        grid-area: guia;
-    }
-    & .tray   {
+    .tray   {
         grid-area: tray;
+        grid-row: auto;
+        grid-column: auto;
     }
-    & .mochi  {
+    .guia   {
+        grid-area: guia;
+        grid-row: 50px;
+        grid-column: 50px;
+    }
+    .mochi  {
         grid-area: mochi;
+        grid-row: 25px;
+        grid-column: 50px;
     }
 }
 //Contenedores de las imágenes del index
-.imagenesCont {
+.imagenesCont   {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 90px;
     margin-top: 10vh;
     transition: .2s;
-    :hover {
+    :hover  {
         transform: scale(1.05);
     }
 }
-
-.imagenPortal1 {
+.imagenPortal1  {
     width: 400px;
     text-align: center;
-}
+}    
 
 //Videos del Index
 #video1 {
@@ -134,24 +139,22 @@ $colores:
     margin-top: 10vh;
     margin-right: 5vw;
     transition: .2s;
-    :hover {
+    :hover  {
         transform: scale(1.05);
     }
 }
-
 //esta seccion se le dio estilo a las cards de los productos
-.row {
-    gap: 10vw;
+.row    {
+    gap:10vw;
     width: 90vw;
     margin-left: 5vw;
-    transition: .2s;
-    :hover {
+    transition: .6s;
+    :hover  {
         transform: scale(1.03);
     }
 }
-
-.card-text {
-    height: 30vh;
+.card-text  {
+    height: 20vh
     overflow-y: scroll;
     text-align: justify;
 }
@@ -162,19 +165,19 @@ $colores:
     flex-wrap: wrap;
     gap: 10vh;
     transition: .2s;
-    :hover {
+    :hover  {
         transform: scale(1.03);
     }
 }
 
-.contactoCont {
+.contactoCont   {
     display: flex;
     flex-direction: column;
     display: inline;
     color: black;
 }
 
-.contenedorForm {
+.contenedorForm   {
     background-color: #1a4d6a;
     margin-left: 12vw;
     margin-right: 10vw;
@@ -182,23 +185,21 @@ $colores:
     margin-bottom: 2vh;
 }
 
-footer {
+footer  {
     background-image: url('../assets/img/montaña-footer.png');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-position-y: center;
 }
-
-.foot {
+.foot   {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
     color: black;
 }
-
 //se aplico @import a las medias queries
-//media queries tablet
+//media queries tablet a partir de 769px
 @media (min-width: $tablet) and (max-width: $desktop)   {
 
     .logo   {
@@ -206,47 +207,39 @@ footer {
         border-radius: 50%;
         margin-left: -50vw;
     }
-
     img {
         width: 75%;
     }
-
-    h1 {
+    h1  {
         font-size: 1.7rem;
         text-align: center;
     }
-
-    h2 {
+    h2  {
         font-size: 1.5rem;
         text-align: center;
     }
-
-    p {
+    p   {
         font-size: 1rem;
         text-align: center;
     }
 
-    .imagenesCont {
+    .imagenesCont   {
         display: flex;
         justify-content: center;
     }
-
-    .imagenPortal1 {
+    .imagenPortal1  {
         width: 70vw;
     }
-
     #video1 {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        
     }
-
     .multi1 {
+        gap: 10vh;
         flex-direction: column;
         align-items: center;
     }
-
     .contenedorForm {
         background-color: #1a4d6a;
         margin-left: 5vw;
@@ -254,14 +247,12 @@ footer {
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
-
-    footer {
+    footer  {
         background-color: #1a4d6a;
-        background-size: auto;
+        background-size: 100%;
         background-image: none;
     }
-
-    .foot {
+    .foot   {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -269,59 +260,83 @@ footer {
         color: white;
     }
 }
-
-//media queries mobile
-@media (min-width: $mobile) and (max-width: $tablet) {
-
+//media queries mobile a partir de 320px
+@media (min-width: $mobile) and (max-width: $tablet)    {
 
     .logo   {
         border-radius: 50%;
         margin-left: 20vw;
         width: 20vw;
     }
-
     img {
         width: 100%;
     }
-
-    h1 {
+    h1  {
         font-size: 1.7rem;
     }
-
-    h2 {
+    h2  {
         font-size: 1.5rem;
     }
-
-    p {
+    p   {
         font-size: 1rem;
         text-align: center;
     }
-
-    .imagenesCont {
+    #galeria-home   {
+        img {
+            width: 100%;
+        }
+            display: grid
+            gap: 3px
+            grid-template-areas:
+            "rino"
+            "tray"
+            "guia"
+            "mochi";
+        
+        & :hover    {
+            filter: grayscale(1);
+        }
+        .rino   {
+            grid-area: rino;
+            grid-row: auto;
+            grid-column: auto;
+        }
+        .guia   {
+            grid-area: guia;
+            grid-row: auto;
+            grid-column: auto;
+        }
+        .tray   {
+            grid-area: tray;
+            grid-row: auto;
+            grid-column: auto;
+        }
+        .mochi  {
+            grid-area: mochi;
+            grid-row: auto;
+            grid-column: auto;
+        }
+    }
+    .imagenesCont   {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-
-    .imagenPortal1 {
+    .imagenPortal1  {
         width: 70vw;
         text-align: center;
-
     }
-
     #video1 {
         display: flex;
         flex-direction: column;
         align-content: center;
         gap: 25px;
     }
-
     .multi1 {
         flex-direction: column;
         align-items: center;
     }
-
     .contenedorForm {
         background-color: #1a4d6a;
         margin-left: -1vw;
@@ -329,14 +344,12 @@ footer {
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
-
-    footer {
+    footer  {
         background-color: #1a4d6a;
         background-size: auto;
         background-image: none;
     }
-
-    .foot {
+    .foot   {
         display: flex;
         flex-direction: column;
         align-items: center;
