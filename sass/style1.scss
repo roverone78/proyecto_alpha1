@@ -154,7 +154,7 @@ $colores: (main: white,
     }
 }
 .card-text  {
-    height: 20vh
+    height: 20vh;
     overflow-y: scroll;
     text-align: justify;
 }
@@ -285,8 +285,8 @@ footer  {
         img {
             width: 100%;
         }
-            display: grid
-            gap: 3px
+            display: grid;
+            gap: 3px;
             grid-template-areas:
             "rino"
             "tray"

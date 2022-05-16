@@ -48,16 +48,6 @@ header .logo {
   margin-left: -25vw;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .container {
-    position: relative;
-    z-index: 2;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
-}
-
 body {
   background-color: ghostwhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -104,18 +94,12 @@ a:hover {
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
-#galeria-home {
+#galeria-home img {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   gap: 5px;
-  grid-template-areas: "rino tray guia guia"
- "rino tray guia guia"
- "mochi mochi guia guia"
- "mochi mochi guia guia";
-}
-
-#galeria-home img {
-  width: 100%;
+      grid-template-areas: "rino tray guia guia" "rino tray guia guia" "mochi mochi guia guia" "mochi mochi guia guia";
 }
 
 #galeria-home :hover {
@@ -216,8 +200,8 @@ a:hover {
   gap: 10vw;
   width: 90vw;
   margin-left: 5vw;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .row :hover {
@@ -226,7 +210,7 @@ a:hover {
 }
 
 .card-text {
-  height: 30vh;
+  height: 20vh;
   overflow-y: scroll;
   text-align: justify;
 }
@@ -320,7 +304,6 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 50px;
   }
   .imagenPortal1 {
     width: 70vw;
@@ -333,20 +316,10 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 25px;
-  }
-  .row {
-    gap: 12vw;
-    width: 150vw;
-    margin-left: 10vw;
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  .row :hover {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
+    gap: 20px;
   }
   .multi1 {
+    gap: 10vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -364,7 +337,7 @@ footer {
   }
   footer {
     background-color: #1a4d6a;
-    background-size: auto;
+    background-size: 100%;
     background-image: none;
   }
   .foot {
@@ -406,10 +379,7 @@ footer {
     display: -ms-grid;
     display: grid;
     gap: 3px;
-        grid-template-areas: "rino"
- "tray"
- "guia"
- "mochi";
+        grid-template-areas: "rino" "tray" "guia" "mochi";
   }
   #galeria-home img {
     width: 100%;
