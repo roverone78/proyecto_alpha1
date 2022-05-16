@@ -94,12 +94,15 @@ a:hover {
 }
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
-#galeria-home img {
-  width: 100%;
+#galeria-home {
   display: -ms-grid;
   display: grid;
   gap: 5px;
       grid-template-areas: "rino tray guia guia" "rino tray guia guia" "mochi mochi guia guia" "mochi mochi guia guia";
+}
+
+#galeria-home img {
+  width: 100%;
 }
 
 #galeria-home :hover {

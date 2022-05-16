@@ -78,16 +78,17 @@ $colores: (main: white,
 
 /*aplicando grid a estas imagenes que da una mejor presentacion a la pagina */
 #galeria-home   {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "rino tray guia guia"
+    "rino tray guia guia"
+    "mochi mochi guia guia"
+    "mochi mochi guia guia";
     img {
         width: 100%;
-        display: grid;
-        gap: 5px;
-        grid-template-areas:
-        "rino tray guia guia"
-        "rino tray guia guia"
-        "mochi mochi guia guia"
-        "mochi mochi guia guia";
     }
+    
     & :hover    {
         filter: grayscale(1)
     }
