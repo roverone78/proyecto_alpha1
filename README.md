@@ -8,4 +8,5 @@
     *   videos embebidos, aplicacion de enlaces donde es requerido en el footer y otros enlaces.
     *   Las imágenes de index están enlazadas totalmente, menos el carrousel ya que es m+as de cáracter informativo.
     *   En la sección de mochilas y accesorios se aplicaron tarjetas con boton de compra.
-    *   En la sección contactos se coloca un formulario simple de bootstrap.
+    *   En la sección contactos se coloca un formulario simple de bootstrap..
+    
